@@ -8,7 +8,7 @@ COPY . .
 ENV NODE_ENV=production DB_HOST=item-db
 # Install for production and build apps
 RUN npm install --production --unsafe-perm && npm run build
-# Run server
-CMD ["npm", "start"]
 # Expose port
 EXPOSE 8080
+# Run server
+CMD ["npm", "start"]

@@ -6,8 +6,6 @@ services:
     image: mongo:3 # Mongo db image
     volumes: # Volume target
       - app-db:/data/db 
-    ports: # Mongo db port
-      - 27017:27017
   item-app: # Service app
     image: ghcr.io/akhmaliswara/a433-microservices/item-app:v1 # Use image from github packages
     container_name: item-app # Container name
